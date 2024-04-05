@@ -13,7 +13,9 @@ def solve(a, b):
             b = x_2
         else:
             a = x_1
-        table.append([str(it), '%.5f' % x_1, '%.5f' % x_2, '%.5f' % a, '%.5f' % b])
+        table.append(
+            [str(it), '%.5f' % x_1, '%.5f' % x_2, '%.5f' % a, '%.5f' % b]
+            )
         if (b - a) / 2 <= E or it == it_count: break
 
     x_s = (a + b) / 2
