@@ -1,6 +1,5 @@
 import yaml
 import math
-import sympy as sp
 import numpy as np
 
 with open('config.yml') as c:
