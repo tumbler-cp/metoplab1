@@ -24,6 +24,6 @@ def solve(a, b):
 
     print('Метод Ньютона')
     print(tabulate(table))
-    print('Результат: x* = ', '%.5f' % x, ' f(x*) = ', '%.5f' % f_s, '\n\n')
+    print('Результат: x* = ', x, ' f(x*) = ', f_s, '\n\n')
 
     return x, f_s

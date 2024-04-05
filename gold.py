@@ -38,6 +38,6 @@ def solve(a, b):
 
     print('Метод золотого сечения')
     print(tabulate(table))
-    print('Результат: x* = ', '%.5f' % x_s, ', f(x*) = ', '%.5f' % f_s, '\n\n')
+    print('Результат: x* = ', x_s, ', f(x*) = ', f_s, '\n\n')
 
     return x_s, f_s
