@@ -2,7 +2,6 @@ import half
 import gold
 import matplotlib.pyplot as plt
 import numpy as np
-import conf
 import newton
 
 def main():
@@ -10,7 +9,7 @@ def main():
     y = x**2 + x + np.sin(x)
 
     x_s, f_s = half.solve(-1, 0)
-    plt.figure('Метод 1')
+    plt.figure('Метод половинного деления')
     plt.scatter(x_s, f_s, color='red', zorder=5)
     plt.plot(x, y)
     plt.title('Метод половинного деления')
@@ -19,7 +18,7 @@ def main():
     plt.grid(True)
 
     x_s, f_s = gold.solve(-1, 0)
-    plt.figure('Метод 2')    
+    plt.figure('Метод золотого сечения')    
     plt.scatter(x_s, f_s, color='red', zorder=5)
     plt.plot(x, y)
     plt.title('Метод золотого сечения')
@@ -28,6 +27,13 @@ def main():
     plt.grid(True)
 
     x_s, f_s = newton.solve(-1, 0)
+    plt.figure('Метод Ньютона')    
+    plt.scatter(x_s, f_s, color='red', zorder=5)
+    plt.plot(x, y)
+    plt.title('Метод Ньютона')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.grid(True)
 
     plt.show()
     
