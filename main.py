@@ -1,8 +1,8 @@
-import half
-import gold
+import methods.half as half
+import methods.gold as gold
 import matplotlib.pyplot as plt
 import numpy as np
-import newton
+import methods.newton as newton
 
 def main():
     x = np.linspace(-1, 0, 100)
